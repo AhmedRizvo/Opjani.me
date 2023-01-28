@@ -1,0 +1,385 @@
+*, ::before, :after{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.section{
+    padding: 3rem 1.5rem;
+}
+
+header{
+    outline: none;
+    #Header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .container{
+            position: relative;
+            max-width: 1050px;
+            nav{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                .navbar-menu{
+                    display: flex;
+                    font-size: 13px;
+                    .navbar-item{
+                        padding: 10px;
+                        color: #4a4a4a;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+                .navbar-end{
+                    display: flex;
+                    font-size: 13px;
+                    align-items: center;
+                    padding: 5px;
+                    .icons{
+                        width: 50px;
+                        border: 1px solid #e7e7e7;
+                        margin: 0 5px;
+                        padding: 10px 14px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .header-text{
+                text-align: center;
+                margin-top: 100px;
+                color: #4a4a4a;
+                .header-one{
+                    background-color: rgba(255, 174, 53, .14);
+                    border-radius: 8px;
+                    color: #ffae35;
+                    padding: 5px;
+                    margin: 10px 0;
+                    font-size: 13px;
+                    display: inline-block;
+                }
+                .header-title{
+                    font-size: 3.5rem;
+                    margin: 10px 0;
+                    font-weight: bold;
+                    .header-title-span{
+                        color: #ffae35;
+                        text-decoration: underline;
+                    }
+                }
+                .header-subtitle{
+                    font-size: 1.2rem;
+                    margin: 10px 0;
+                }
+            }
+            .phones{
+                position: relative;
+                margin: 50px 0 0 50px;
+                .iPhone1{
+                    position: relative;
+                    left: 80px;
+                    z-index: -1;
+                }
+                .iPhone3{
+                    position: relative;
+                    right: 13px;
+                }
+                .iPhone4{
+                    position: relative;
+                    right: 90px;
+                    z-index: -1;
+                }
+                .preuzmi-apk{
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-evenly;
+                    top: 50%;
+                    left: 18%;
+                    .preuzmi-btn{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #31434e;
+                        height: 72px;
+                        width: 268px;
+                        border-radius: 8px;
+                        color: white;
+                        margin: 5px;
+                        cursor: pointer;
+                        img{
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
+
+#Look{
+    .container{
+        max-width: 1300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        .look-left{
+            width: 50%;
+            padding: 50px 150px 50px 0;
+        }
+        .look-right{
+            width: 50%;
+            font-size: 19px;
+            color: #31434e;
+            padding-right: 50px;
+            .look-icon{
+                background-color: #31434e;
+                padding: 15px;
+                border-radius: 50%;
+                cursor: pointer;
+                animation-duration: 1s;
+                animation-timing-function: ease;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-name: Bounce;
+            }
+            .look-title{
+                font-size: 3.5rem;
+                margin: 10px 0;
+                font-weight: bold;
+                .look-title-span{
+                    color: #ffae35;
+                    text-decoration: underline;
+                }
+            }
+            .look-text{
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+#Other {
+    .container {
+        max-width: 1300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        .text-slika{
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #fff3e1;
+                padding: 50px;
+                border-radius: 16px;
+                width: 48%;
+                font-size: 18px;
+                color: #31434e;
+                .icon{
+                    background-color: #31434e;
+                    padding: 15px;
+                    border-radius: 50%;
+                    margin-bottom: 50px;
+                    cursor: pointer;
+                }
+                .text-title{
+                    font-size: 3.5rem;
+                    margin: 10px 0;
+                    font-weight: bold;
+                    .text-title-span{
+                        color: #ffae35;
+                        text-decoration: underline;
+                    }
+                }
+                .text-subtitle{
+                    font-size: 22px;
+                    margin: 10px 0;
+                }
+                .text-subtitle-spec{
+                    background-color: rgba(49, 67, 78, .1);
+                    border-radius: 8px;
+                    padding: 5px;
+                    margin: 1px 0;
+                    display: inline-block;
+                }
+                .text-description{
+                    font-size: 18px;
+                    margin: 10px 0;
+                }
+                .preuzmi-btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #31434e;
+                    height: 72px;
+                    width: 268px;
+                    border-radius: 8px;
+                    color: white;
+                    margin: 5px;
+                    cursor: pointer;
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .slika{
+                width: 48%;
+            }
+        }
+    }
+}
+
+#Location{
+    background: url(/images/mne-left.png) no-repeat 0,url(/images/mneRight.png) no-repeat 60rem;
+    background-size: contain;
+    .container{
+        max-width: 1300px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+        .text {
+            .icon {
+                background-color: #ffae35;
+                padding: 15px;
+                border-radius: 50%;
+                margin-bottom: 50px;
+                cursor: pointer;
+            }    
+            .text-title{
+                font-size: 3rem;
+                margin: 10px 0;
+                font-weight: bold;
+                color: #31434e;
+            }
+            .text-title-span{
+                color: #ffae35;
+                text-decoration: underline;
+            }
+            .text-description{
+                color: #31434e;
+                font-size: 20px;
+                margin: 10px 0;
+            }
+            .text-subtitle-spec{
+                background-color: rgba(49, 67, 78, 0.1);
+                color: #31434e;
+                padding: 8px;
+                border-radius: 10px;
+                margin: 20px 0;
+                display: inline-block;
+            }
+            .social-icons{
+                display: flex;
+                .social-icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: white;
+                    border: 1px solid #e7e7e7;
+                    margin-right: 10px;
+                    padding: 12px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Download {
+    background: url(/images/preuzmi_background.png) no-repeat bottom;
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        text-align: center;
+        .icon {
+            background-color: #ffae35;
+            padding: 15px;
+            border-radius: 50%;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+        .download-title{
+            font-size: 3.5rem;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #31434e;
+        }
+        .download-text-span{
+            color: #ffae35;
+            text-decoration: underline;
+        }
+        .download-subtitle{
+            color: #31434e;
+            font-size: 20px;
+            margin: 50px 0;
+        }  
+        .phone{
+            position: relative;
+            margin: 50px;
+            .preuzmi-apk{
+                position: absolute;
+                display: flex;
+                justify-content: space-evenly;
+                top: 45%;
+                left: 28%;
+                .preuzmi-btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: linear-gradient(20deg, #f06916, #262626 87%);
+                    height: 72px;
+                    width: 268px;
+                    border-radius: 8px;
+                    color: white;
+                    margin: 5px;
+                    cursor: pointer;
+                    img{
+                        margin: 5px;
+                    }
+                    }
+                }
+        }  
+    }
+}
+
+#Footer {
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        text-align: center;
+        .footer-text{
+            font-size: 12px;
+            margin: 10px 0;
+            color: #4a4a4a;
+            .footer-text-span{
+                color: #ffae35;
+            }
+        }
+        .footer-icons{
+            img{
+                margin: 5px 15px;
+            }
+        }
+    }
+}

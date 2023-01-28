@@ -1,0 +1,375 @@
+*, ::before, :after {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+header {
+  outline: none;
+}
+header #Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header #Header .container {
+  position: relative;
+  max-width: 1050px;
+}
+header #Header .container nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+header #Header .container nav .navbar-menu {
+  display: flex;
+  font-size: 13px;
+}
+header #Header .container nav .navbar-menu .navbar-item {
+  padding: 10px;
+  color: #4a4a4a;
+  text-decoration: none;
+  cursor: pointer;
+}
+header #Header .container nav .navbar-end {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  padding: 5px;
+}
+header #Header .container nav .navbar-end .icons {
+  width: 50px;
+  border: 1px solid #e7e7e7;
+  margin: 0 5px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+header #Header .container .header-text {
+  text-align: center;
+  margin-top: 100px;
+  color: #4a4a4a;
+}
+header #Header .container .header-text .header-one {
+  background-color: rgba(255, 174, 53, 0.14);
+  border-radius: 8px;
+  color: #ffae35;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 13px;
+  display: inline-block;
+}
+header #Header .container .header-text .header-title {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+header #Header .container .header-text .header-title .header-title-span {
+  color: #ffae35;
+  text-decoration: underline;
+}
+header #Header .container .header-text .header-subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+header #Header .container .phones {
+  position: relative;
+  margin: 50px 0 0 50px;
+}
+header #Header .container .phones .iPhone1 {
+  position: relative;
+  left: 80px;
+  z-index: -1;
+}
+header #Header .container .phones .iPhone3 {
+  position: relative;
+  right: 13px;
+}
+header #Header .container .phones .iPhone4 {
+  position: relative;
+  right: 90px;
+  z-index: -1;
+}
+header #Header .container .phones .preuzmi-apk {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  top: 50%;
+  left: 18%;
+}
+header #Header .container .phones .preuzmi-apk .preuzmi-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #31434e;
+  height: 72px;
+  width: 268px;
+  border-radius: 8px;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
+  margin: 5px;
+}
+
+#Look .container {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#Look .container .look-left {
+  width: 50%;
+  padding: 50px 150px 50px 0;
+}
+#Look .container .look-right {
+  width: 50%;
+  font-size: 19px;
+  color: #31434e;
+  padding-right: 50px;
+}
+#Look .container .look-right .look-icon {
+  background-color: #31434e;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: Bounce;
+}
+#Look .container .look-right .look-title {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+#Look .container .look-right .look-title .look-title-span {
+  color: #ffae35;
+  text-decoration: underline;
+}
+#Look .container .look-right .look-text {
+  margin: 20px 0;
+}
+
+#Other .container {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#Other .container .text-slika {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+#Other .container .text-slika .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff3e1;
+  padding: 50px;
+  border-radius: 16px;
+  width: 48%;
+  font-size: 18px;
+  color: #31434e;
+}
+#Other .container .text-slika .text .icon {
+  background-color: #31434e;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+#Other .container .text-slika .text .text-title {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+#Other .container .text-slika .text .text-title .text-title-span {
+  color: #ffae35;
+  text-decoration: underline;
+}
+#Other .container .text-slika .text .text-subtitle {
+  font-size: 22px;
+  margin: 10px 0;
+}
+#Other .container .text-slika .text .text-subtitle-spec {
+  background-color: rgba(49, 67, 78, 0.1);
+  border-radius: 8px;
+  padding: 5px;
+  margin: 1px 0;
+  display: inline-block;
+}
+#Other .container .text-slika .text .text-description {
+  font-size: 18px;
+  margin: 10px 0;
+}
+#Other .container .text-slika .text .preuzmi-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #31434e;
+  height: 72px;
+  width: 268px;
+  border-radius: 8px;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+#Other .container .text-slika .text .preuzmi-btn img {
+  margin-right: 5px;
+}
+#Other .container .text-slika .slika {
+  width: 48%;
+}
+
+#Location {
+  background: url(/images/mne-left.png) no-repeat 0, url(/images/mneRight.png) no-repeat 60rem;
+  background-size: contain;
+}
+#Location .container {
+  max-width: 1300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+#Location .container .text .icon {
+  background-color: #ffae35;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+#Location .container .text .text-title {
+  font-size: 3rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #31434e;
+}
+#Location .container .text .text-title-span {
+  color: #ffae35;
+  text-decoration: underline;
+}
+#Location .container .text .text-description {
+  color: #31434e;
+  font-size: 20px;
+  margin: 10px 0;
+}
+#Location .container .text .text-subtitle-spec {
+  background-color: rgba(49, 67, 78, 0.1);
+  color: #31434e;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 20px 0;
+  display: inline-block;
+}
+#Location .container .text .social-icons {
+  display: flex;
+}
+#Location .container .text .social-icons .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #e7e7e7;
+  margin-right: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#Location .container .text .social-icons .social-icon img {
+  margin-right: 10px;
+}
+
+#Download {
+  background: url(/images/preuzmi_background.png) no-repeat bottom;
+}
+#Download .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+#Download .container .icon {
+  background-color: #ffae35;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+#Download .container .download-title {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #31434e;
+}
+#Download .container .download-text-span {
+  color: #ffae35;
+  text-decoration: underline;
+}
+#Download .container .download-subtitle {
+  color: #31434e;
+  font-size: 20px;
+  margin: 50px 0;
+}
+#Download .container .phone {
+  position: relative;
+  margin: 50px;
+}
+#Download .container .phone .preuzmi-apk {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  top: 45%;
+  left: 28%;
+}
+#Download .container .phone .preuzmi-apk .preuzmi-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(20deg, #f06916, #262626 87%);
+  height: 72px;
+  width: 268px;
+  border-radius: 8px;
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+}
+#Download .container .phone .preuzmi-apk .preuzmi-btn img {
+  margin: 5px;
+}
+
+#Footer .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+#Footer .container .footer-text {
+  font-size: 12px;
+  margin: 10px 0;
+  color: #4a4a4a;
+}
+#Footer .container .footer-text .footer-text-span {
+  color: #ffae35;
+}
+#Footer .container .footer-icons img {
+  margin: 5px 15px;
+}/*# sourceMappingURL=style.css.map */
