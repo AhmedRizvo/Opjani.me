@@ -1,4 +1,6 @@
-*, ::before, :after {
+*,
+::before,
+:after {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
@@ -21,23 +23,48 @@ header #Header {
 }
 header #Header .container {
   position: relative;
-  max-width: 1050px;
+  max-width: 1150px;
 }
 header #Header .container nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
+}
+header #Header .container nav .navbar-brand {
+  padding: 5px;
+}
+header #Header .container nav .toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+header #Header .container nav .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
 }
 header #Header .container nav .navbar-menu {
   display: flex;
   font-size: 13px;
+  padding: 5px;
 }
 header #Header .container nav .navbar-menu .navbar-item {
-  padding: 10px;
+  padding: 20px;
   color: #4a4a4a;
   text-decoration: none;
   cursor: pointer;
+  display: block;
+}
+header #Header .container nav .navbar-menu .navbar-item:hover {
+  background-color: lightgray;
+  color: #3273dc;
 }
 header #Header .container nav .navbar-end {
   display: flex;
@@ -120,6 +147,46 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn {
 header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
   margin: 5px;
 }
+@media only screen and (max-width: 1030px) {
+  header #Header .container .phones {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  header #Header .container .phones .iPhone3 {
+    top: 100px;
+  }
+  header #Header .container .phones .iPhone1 {
+    display: none;
+  }
+  header #Header .container .phones .iPhone4 {
+    display: none;
+  }
+  header #Header .container .phones .preuzmi-apk {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: auto;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  header #Header .container nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header #Header .container nav .toggle-button {
+    display: flex;
+  }
+  header #Header .container nav .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  header #Header .container nav .navbar-menu .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+}
 
 #Look .container {
   max-width: 1300px;
@@ -164,6 +231,19 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
 }
 #Look .container .look-right .look-text {
   margin: 20px 0;
+}
+@media only screen and (max-width: 900px) {
+  #Look .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #Look .container .look-left {
+    width: 80%;
+    padding: 50px;
+  }
+  #Look .container .look-right {
+    width: 80%;
+  }
 }
 
 #Other .container {
@@ -239,6 +319,22 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
 }
 #Other .container .text-slika .slika {
   width: 48%;
+}
+@media only screen and (max-width: 900px) {
+  #Other .container .text-slika {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  #Other .container .text-slika .text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #Other .container .text-slika .slika {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
 }
 
 #Location {
@@ -333,13 +429,14 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
 #Download .container .phone {
   position: relative;
   margin: 50px;
+  display: flex;
+  justify-content: center;
 }
 #Download .container .phone .preuzmi-apk {
   position: absolute;
   display: flex;
   justify-content: space-evenly;
   top: 45%;
-  left: 28%;
 }
 #Download .container .phone .preuzmi-apk .preuzmi-btn {
   display: flex;
@@ -355,6 +452,12 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
 }
 #Download .container .phone .preuzmi-apk .preuzmi-btn img {
   margin: 5px;
+}
+@media only screen and (max-width: 700px) {
+  #Download .container .phone .preuzmi-apk {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #Footer .container {
