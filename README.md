@@ -1,3 +1,3 @@
 # Opjani.me
 
-https://ahmedrizvo.github.io/Opjani.me/
+https://stellular-entremet-88ed5b.netlify.app/
