@@ -107,19 +107,51 @@ header {
       .phones {
         position: relative;
         margin: 50px 0 0 50px;
+        overflow: hidden;
+        @keyframes Slide {
+          from {
+            top: 550px;
+          }
+          to {
+            top: 0;
+          }
+        }
+        @keyframes SlideButton {
+          from {
+            top: 550px;
+          }
+          to {
+            top: 273px;
+          }
+        }
         .iPhone1 {
           position: relative;
           left: 80px;
           z-index: -1;
+          animation: Slide 1.5s 1;
+          animation-delay: 1.5s;
+          animation-fill-mode: backwards;
+        }
+        .iPhone2 {
+          position: relative;
+          animation: Slide 1.5s 1;
+          animation-delay: 0.5s;
+          animation-fill-mode: backwards;
         }
         .iPhone3 {
           position: relative;
           right: 13px;
+          animation: Slide 1.5s 1;
+          animation-delay: 0.5s;
+          animation-fill-mode: backwards;
         }
         .iPhone4 {
           position: relative;
           right: 90px;
           z-index: -1;
+          animation: Slide 1.5s 1;
+          animation-delay: 1.5s;
+          animation-fill-mode: backwards;
         }
         .preuzmi-apk {
           position: absolute;
@@ -127,6 +159,9 @@ header {
           justify-content: space-evenly;
           top: 50%;
           left: 18%;
+          animation: SlideButton 1.5s 1;
+          animation-delay: 2s;
+          animation-fill-mode: backwards;
           .preuzmi-btn {
             display: flex;
             justify-content: center;
@@ -182,9 +217,11 @@ header {
               text-align: center;
             }
           }
-
           flex-direction: column;
           align-items: flex-start;
+          .navbar-end {
+            margin: 0 auto;
+          }
         }
       }
     }

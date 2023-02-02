@@ -110,20 +110,52 @@ header #Header .container .header-text .header-subtitle {
 header #Header .container .phones {
   position: relative;
   margin: 50px 0 0 50px;
+  overflow: hidden;
+}
+@keyframes Slide {
+  from {
+    top: 550px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes SlideButton {
+  from {
+    top: 550px;
+  }
+  to {
+    top: 273px;
+  }
 }
 header #Header .container .phones .iPhone1 {
   position: relative;
   left: 80px;
   z-index: -1;
+  animation: Slide 1.5s 1;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+}
+header #Header .container .phones .iPhone2 {
+  position: relative;
+  animation: Slide 1.5s 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 header #Header .container .phones .iPhone3 {
   position: relative;
   right: 13px;
+  animation: Slide 1.5s 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 header #Header .container .phones .iPhone4 {
   position: relative;
   right: 90px;
   z-index: -1;
+  animation: Slide 1.5s 1;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 header #Header .container .phones .preuzmi-apk {
   position: absolute;
@@ -131,6 +163,9 @@ header #Header .container .phones .preuzmi-apk {
   justify-content: space-evenly;
   top: 50%;
   left: 18%;
+  animation: SlideButton 1.5s 1;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
 }
 header #Header .container .phones .preuzmi-apk .preuzmi-btn {
   display: flex;
@@ -185,6 +220,9 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
   header #Header .container nav .navbar-menu .navbar-item {
     width: 100%;
     text-align: center;
+  }
+  header #Header .container nav .navbar-end {
+    margin: 0 auto;
   }
 }
 
