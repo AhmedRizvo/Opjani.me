@@ -225,7 +225,24 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
     margin: 0 auto;
   }
 }
+@media only screen and (max-width: 500px) {
+  header #Header .container {
+    width: 100%;
+    padding: 0;
+  }
+  header #Header .container .header-text .header-title {
+    font-size: 25px;
+  }
+}
 
+@keyframes Bounce {
+  from {
+    scale: 0.9;
+  }
+  to {
+    scale: 1.1;
+  }
+}
 #Look .container {
   max-width: 1300px;
   width: 100%;
@@ -250,11 +267,8 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
   border-radius: 50%;
   cursor: pointer;
   animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-fill-mode: none;
   animation-play-state: running;
   animation-name: Bounce;
 }
@@ -281,6 +295,15 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
   }
   #Look .container .look-right {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #Look .container {
+    width: 100%;
+    padding: 0;
+  }
+  #Look .container .look-right .look-title {
+    font-size: 25px;
   }
 }
 
@@ -315,6 +338,11 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
   border-radius: 50%;
   margin-bottom: 50px;
   cursor: pointer;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-name: Bounce;
 }
 #Other .container .text-slika .text .text-title {
   font-size: 3.5rem;
@@ -374,6 +402,15 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
     padding: 30px 0;
   }
 }
+@media only screen and (max-width: 500px) {
+  #Other .container {
+    width: 100%;
+    padding: 0;
+  }
+  #Other .container .text-slika .text .text-title {
+    font-size: 25px;
+  }
+}
 
 #Location {
   background: url(/images/mne-left.png) no-repeat 0, url(/images/mneRight.png) no-repeat 60rem;
@@ -392,6 +429,11 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
   border-radius: 50%;
   margin-bottom: 50px;
   cursor: pointer;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-name: Bounce;
 }
 #Location .container .text .text-title {
   font-size: 3rem;
@@ -433,6 +475,26 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
 #Location .container .text .social-icons .social-icon img {
   margin-right: 10px;
 }
+@media only screen and (max-width: 500px) {
+  #Location .container {
+    width: 100%;
+    padding: 0;
+  }
+  #Location .container .text {
+    width: 100%;
+  }
+  #Location .container .text .text-title {
+    font-size: 25px;
+  }
+  #Location .container .text .social-icons {
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+  }
+  #Location .container .text .social-icons .social-icon {
+    margin: 5px;
+  }
+}
 
 #Download {
   background: url(/images/preuzmi_background.png) no-repeat bottom;
@@ -448,6 +510,11 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
   border-radius: 50%;
   margin-bottom: 50px;
   cursor: pointer;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-name: Bounce;
 }
 #Download .container .download-title {
   font-size: 3.5rem;
@@ -495,6 +562,15 @@ header #Header .container .phones .preuzmi-apk .preuzmi-btn img {
   #Download .container .phone .preuzmi-apk {
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #Download .container {
+    width: 100%;
+    padding: 0;
+  }
+  #Download .container .download-text .download-title {
+    font-size: 25px;
   }
 }
 
